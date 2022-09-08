@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User
 from django.db import models
 
+
 # Create your models here.
 class Room(models.Model):
     name = models.CharField(max_length=200)
@@ -25,6 +26,5 @@ class Message(models.Model):
     class Meta:
         ordering = ['-created', '-updated']
 
-
     def __str__(self):
-        return self.body[50]
+        return self.body[0:50]

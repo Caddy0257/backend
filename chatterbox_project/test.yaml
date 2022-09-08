@@ -1,0 +1,4 @@
+Rooms:
+  Room:
+    id: 1
+    name: "Python Django"
