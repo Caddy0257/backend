@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'chatterbox/style.css' %}"/>
+</head>
+
+<body>
+
+<header>Chatterbox</header>
+
+{% include 'navbar.html' %}
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title of current page</title> <!-- bude se dynamicky měnit -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ g
+<header>Chatterbox</header>
+
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Create room</a></li>  <!-- only if logged in -->
+        <li><a href="/">Rooms</a></li>  <!-- only if logged in -->
+        <li class="last-item"><a href="">Login/Signup</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="create-room-form">
+        <span class="label">
+            <label for="name">Name:</label>
+        </span>
+        <input type="text" name="name" id="name" placeholder="Name of new room"> <br>
+        <span class="label">
+            <label for="description">Description:</label>
+        </span>
+        <textarea name="description" id="description" rows="4" cols="100"></textarea> <br>
+        <input type="submit" value="Send">
+    </div>
+</main>
+
+</body>
+</html>
